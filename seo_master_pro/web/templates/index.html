@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-search-dollar"></i>
+                    <span>SEO Master PRO</span>
+                </div>
+                <nav class="nav">
+                    <a href="/" class="nav-link active"><i class="fas fa-home"></i> Главная</a>
+                    <a href="#features" class="nav-link"><i class="fas fa-star"></i> Возможности</a>
+                    <a href="#pricing" class="nav-link"><i class="fas fa-tag"></i> Тарифы</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Профессиональный SEO Аудит <span class="highlight">Уровня Enterprise</span></h1>
+                    <p class="hero-subtitle">Полный анализ сайта за 5 минут: технический аудит, коммерческие факторы, JS рендеринг, микроразметка и готовые отчеты</p>
+                    
+                    <!-- Audit Form -->
+                    <div class="audit-form-container">
+                        <form id="auditForm" class="audit-form">
+                            <div class="form-group">
+                                <label for="url">URL сайта для аудита</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-globe"></i>
+                                    <input 
+                                        type="text" 
+                                        id="url" 
+                                        name="url" 
+                                        placeholder="example.com" 
+                                        required
+                                        autocomplete="off"
+                                    >
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="max_pages">Макс. страниц</label>
+                                    <input type="number" id="max_pages" name="max_pages" value="50" min="1" max="1000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="max_depth">Глубина</label>
+                                    <input type="number" id="max_depth" name="max_depth" value="3" min="1" max="10">
+                                </div>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="check_commercial" checked>
+                                    <span class="checkmark"></span>
+                                    Коммерческие факторы
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="check_js" checked>
+                                    <span class="checkmark"></span>
+                                    JS Рендеринг
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="check_sitemap" checked>
+                                    <span class="checkmark"></span>
+                                    Sitemap.xml
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="check_robots" checked>
+                                    <span class="checkmark"></span>
+                                    Robots.txt
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary btn-large">
+                                <i class="fas fa-rocket"></i>
+                                Запустить аудит
+                            </button>
+                        </form>
+                        
+                        <!-- Progress Indicator -->
+                        <div id="progressContainer" class="progress-container" style="display: none;">
+                            <div class="progress-header">
+                                <span>Выполняется аудит...</span>
+                                <span id="progressPercent">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div id="progressBar" class="progress-fill"></div>
+                            </div>
+                            <div class="progress-steps">
+                                <div class="step" data-step="1"><i class="fas fa-spider"></i> Краулер</div>
+                                <div class="step" data-step="2"><i class="fas fa-sitemap"></i> Sitemap</div>
+                                <div class="step" data-step="3"><i class="fas fa-file-code"></i> Robots.txt</div>
+                                <div class="step" data-step="4"><i class="fas fa-tags"></i> Мета-теги</div>
+                                <div class="step" data-step="5"><i class="fas fa-shopping-cart"></i> Коммерция</div>
+                                <div class="step" data-step="6"><i class="fab fa-js"></i> JS Анализ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features">
+                <h2>Возможности системы</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-spider"></i></div>
+                        <h3>Site Crawler</h3>
+                        <p>Профессиональный краулер как Screaming Frog: сбор всех URL, статус-коды, структура сайта, глубина клика</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Sitemap Analyzer</h3>
+                        <p>Анализ sitemap.xml: поиск битых URL, редиректов, noindex страниц, старых страниц</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Robots.txt Analyzer</h3>
+                        <p>Проверка robots.txt: закрытые разделы, конфликтные правила, симулятор доступа</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Google Snippet Preview</h3>
+                        <p>Превью сниппета в Google: Title, Description, URL с оценкой оптимальности</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <h3>Commercial Audit</h3>
+                        <p>16 коммерческих факторов: цены, кнопки "Купить", корзина, контакты, доставка, реквизиты</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fab fa-js-square"></i></div>
+                        <h3>JS Rendering</h3>
+                        <p>Проверка рендеринга JavaScript: видимость контента для Googlebot, совместимость</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Schema.org Analyzer</h3>
+                        <p>Проверка микроразметки: Product, BreadcrumbList, FAQPage, Organization, LocalBusiness</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
+                        <h3>White-Label Reports</h3>
+                        <p>Drag-and-Drop конструктор отчетов: брендирование, экспорт в HTML/PDF/Excel</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Модулей анализа</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Без внешних API</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5 мин</div>
+                    <div class="stat-label">Среднее время аудита</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Проверок без лимитов</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 SEO Master PRO. Профессиональный инструмент для SEO-специалистов.</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fas fa-book"></i> Документация</a>
+                    <a href="#"><i class="fas fa-envelope"></i> Поддержка</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

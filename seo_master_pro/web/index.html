@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Master PRO - Профессиональный SEO аудит</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .warning strong {
+            color: #856404;
+        }
+        .warning p {
+            color: #856404;
+            margin: 5px 0;
+        }
+        .methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .method-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        .method-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .method-card ol {
+            padding-left: 20px;
+            color: #555;
+        }
+        .method-card li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .method-card code {
+            background: #2d3748;
+            color: #68d391;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+        }
+        .btn-secondary:hover {
+            box-shadow: 0 8px 25px rgba(245, 87, 108, 0.6);
+        }
+        .features {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+        }
+        .features h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            color: #555;
+        }
+        .feature-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #999;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .container { padding: 20px; }
+            .methods { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 SEO Master PRO</h1>
+        <p class="subtitle">Профессиональный инструмент SEO-аудита уровня Enterprise</p>
+
+        <div class="warning">
+            <strong>⚠️ Важно:</strong> GitHub Pages не поддерживает Python/FastAPI!<br>
+            <p>Этот инструмент требует сервер с Python для работы. Выберите способ запуска ниже:</p>
+        </div>
+
+        <div class="methods">
+            <div class="method-card">
+                <h3>💻 Локальный запуск</h3>
+                <ol>
+                    <li>Клонируйте репозиторий</li>
+                    <li><code>pip install -r requirements.txt</code></li>
+                    <li><code>playwright install --with-deps chromium</code></li>
+                    <li><code>python run_web.py</code></li>
+                    <li>Откройте <code>http://localhost:8000</code></li>
+                </ol>
+            </div>
+
+            <div class="method-card">
+                <h3>☁️ Render.com (Бесплатно)</h3>
+                <ol>
+                    <li>Зарегистрируйтесь на render.com</li>
+                    <li>Создайте Web Service</li>
+                    <li>Подключите GitHub репозиторий</li>
+                    <li>Deploy запустится автоматически</li>
+                    <li>Получите URL вида <code>https://seo-master.onrender.com</code></li>
+                </ol>
+            </div>
+
+            <div class="method-card">
+                <h3>🚂 Railway.app</h3>
+                <ol>
+                    <li>Зарегистрируйтесь на railway.app</li>
+                    <li>New Project → Deploy from GitHub</li>
+                    <li>Выберите репозиторий</li>
+                    <li>Railway автоматически запустит приложение</li>
+                    <li>Получите рабочий URL</li>
+                </ol>
+            </div>
+
+            <div class="method-card">
+                <h3>🐳 Docker / VPS</h3>
+                <ol>
+                    <li>Создайте Dockerfile (инструкция в README)</li>
+                    <li><code>docker build -t seo-master-pro .</code></li>
+                    <li><code>docker run -p 8000:8000 seo-master-pro</code></li>
+                    <li>Или разверните на любом VPS</li>
+                    <li>Откройте порт 8000</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://github.com/garbuzalex83-oss/sitemap-analyzer/blob/main/README_DEPLOY.md" class="btn" target="_blank">
+                📖 Полная инструкция по установке
+            </a>
+            <a href="https://github.com/garbuzalex83-oss/sitemap-analyzer" class="btn btn-secondary" target="_blank">
+                ⭐ GitHub Репозиторий
+            </a>
+        </div>
+
+        <div class="features">
+            <h2>🔥 Возможности инструмента</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong><span class="emoji">🕷️</span>Site Crawler</strong>
+                    Сканирование всех URL
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">📝</span>Meta Auditor</strong>
+                    Title, Description, H1-H6
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">🛒</span>Commercial Audit</strong>
+                    16 факторов доверия
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">⚡</span>JS Renderer</strong>
+                    Анализ рендеринга
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">📊</span>SERP Preview</strong>
+                    Превью сниппета Google
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">🎨</span>Report Builder</strong>
+                    White-Label отчеты
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">🗺️</span>Sitemap</strong>
+                    Анализ sitemap.xml
+                </div>
+                <div class="feature-item">
+                    <strong><span class="emoji">🤖</span>Robots.txt</strong>
+                    Проверка правил
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>SEO Master PRO © 2024 | Профессиональный SEO аудит уровня Enterprise</p>
+            <p>Создано для SEO-специалистов, которые ценят качество и скорость</p>
+        </footer>
+    </div>
+</body>
+</html>

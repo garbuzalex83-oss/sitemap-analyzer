@@ -1,0 +1,439 @@
+{
+  "report_id": "report_20260522_213041",
+  "generated_at": "2026-05-22T21:30:41.994457",
+  "template": {
+    "id": "full_report",
+    "name": "Полный SEO отчет"
+  },
+  "branding": {
+    "company_name": "SEO Master PRO",
+    "contact_info": "professional SEO audit tool",
+    "logo": ""
+  },
+  "sections": [
+    {
+      "type": "header",
+      "title": "https://example.com/product/nike-air-max",
+      "subtitle": "Дата аудита: 22.05.2026",
+      "branding": {
+        "company_name": "SEO Master PRO",
+        "contact_info": "professional SEO audit tool",
+        "logo": ""
+      },
+      "settings": {}
+    },
+    {
+      "type": "summary",
+      "title": "Краткое резюме",
+      "content": {
+        "overall_score": 79,
+        "status": "good",
+        "status_text": "Хорошее состояние",
+        "color": "#3b82f6",
+        "total_issues": 1,
+        "critical_issues": 0,
+        "url": "https://example.com/product/nike-air-max",
+        "audit_date": "22.05.2026 21:30"
+      },
+      "settings": {}
+    },
+    {
+      "type": "score_card",
+      "title": "Оценки и метрики",
+      "scores": [
+        {
+          "name": "Мета-теги",
+          "score": 70,
+          "max_score": 100
+        },
+        {
+          "name": "Коммерческие факторы",
+          "score": 77,
+          "max_score": 100
+        },
+        {
+          "name": "Доверие",
+          "score": 85,
+          "max_score": 100
+        },
+        {
+          "name": "JS Рендеринг",
+          "score": 100,
+          "max_score": 100
+        }
+      ],
+      "overall": 79,
+      "settings": {}
+    },
+    {
+      "type": "meta_tags",
+      "title": "Анализ мета-тегов",
+      "data": {
+        "url": "https://example.com/product/nike-air-max",
+        "page_type": "product",
+        "title": {
+          "value": "Купить кроссовки Nike Air Max в Москве - лучшие цены | SportStore",
+          "length": 65,
+          "status": "too_long",
+          "issues": [
+            {
+              "url": "https://example.com/product/nike-air-max",
+              "issue_type": "long_title",
+              "priority": "medium",
+              "message": "Title слишком длинный (65 символов). В поиске он будет обрезан.",
+              "recommendation": "Сократите Title до 60 символов. Важную информацию разместите в начале.",
+              "current_value": "Купить кроссовки Nike Air Max в Москве - лучшие цены | SportStore",
+              "expected_value": "Максимум 60 символов"
+            }
+          ]
+        },
+        "description": {
+          "value": "Широкий выбор кроссовок Nike Air Max в Москве. Оригинальная продукция, гарантия качества, быстрая доставка. Закажите онлайн!",
+          "length": 124,
+          "status": "optimal",
+          "issues": []
+        },
+        "headings": {
+          "h1": [
+            "Кроссовки Nike Air Max"
+          ],
+          "h2": [
+            "Описание",
+            "Характеристики",
+            "Доставка",
+            "Оплата",
+            "Отзывы"
+          ],
+          "h3": [],
+          "h4": [],
+          "h5": [],
+          "h6": [],
+          "issues": []
+        },
+        "h1_status": {
+          "count": 1,
+          "status": "optimal",
+          "issues": []
+        },
+        "structure_score": 70,
+        "issues": [
+          {
+            "url": "https://example.com/product/nike-air-max",
+            "issue_type": "long_title",
+            "priority": "medium",
+            "message": "Title слишком длинный (65 символов). В поиске он будет обрезан.",
+            "recommendation": "Сократите Title до 60 символов. Важную информацию разместите в начале.",
+            "current_value": "Купить кроссовки Nike Air Max в Москве - лучшие цены | SportStore",
+            "expected_value": "Максимум 60 символов"
+          }
+        ],
+        "total_issues": 1,
+        "critical_count": 0,
+        "high_count": 0
+      },
+      "issues": [
+        {
+          "url": "https://example.com/product/nike-air-max",
+          "issue_type": "long_title",
+          "priority": "medium",
+          "message": "Title слишком длинный (65 символов). В поиске он будет обрезан.",
+          "recommendation": "Сократите Title до 60 символов. Важную информацию разместите в начале.",
+          "current_value": "Купить кроссовки Nike Air Max в Москве - лучшие цены | SportStore",
+          "expected_value": "Максимум 60 символов"
+        }
+      ],
+      "settings": {}
+    },
+    {
+      "type": "snippet_preview",
+      "title": "Превью сниппета в Google",
+      "snippet": {
+        "title": "Купить кроссовки Nike Air Max в Москве - лучшие цены | ...",
+        "description": "Широкий выбор кроссовок Nike Air Max в Москве. Оригинальная продукция, гарантия качества,...",
+        "url": "https://example.com/product/nike-air-max",
+        "domain": "example.com",
+        "title_length": 65,
+        "description_length": 124,
+        "title_truncated": true,
+        "description_truncated": true
+      },
+      "settings": {}
+    },
+    {
+      "type": "headings",
+      "title": "Структура заголовков",
+      "headings": {
+        "h1": [
+          "Кроссовки Nike Air Max"
+        ],
+        "h2": [
+          "Описание",
+          "Характеристики",
+          "Доставка",
+          "Оплата",
+          "Отзывы"
+        ],
+        "h3": [],
+        "h4": [],
+        "h5": [],
+        "h6": [],
+        "issues": []
+      },
+      "structure_score": 70,
+      "settings": {}
+    },
+    {
+      "type": "commercial_factors",
+      "title": "Коммерческие факторы",
+      "commercial_score": 77,
+      "trust_score": 85,
+      "elements_found": [
+        {
+          "element_type": "price",
+          "found": true,
+          "confidence": 0.7,
+          "content": "12 990 ₽",
+          "location": null,
+          "issues": [
+            "Цена равна 0 или указана как бесплатная"
+          ]
+        },
+        {
+          "element_type": "buy_button",
+          "found": true,
+          "confidence": 0.9,
+          "content": "buy",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "cart",
+          "found": true,
+          "confidence": 0.7,
+          "content": "<span class=\"cart-count\"",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "contacts",
+          "found": true,
+          "confidence": 0.6,
+          "content": "+74951234567",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "delivery",
+          "found": true,
+          "confidence": 0.65,
+          "content": "delivery",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "payment",
+          "found": true,
+          "confidence": 0.7,
+          "content": "Наличные",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "returns",
+          "found": true,
+          "confidence": 0.5,
+          "content": "Возврат",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "reviews",
+          "found": true,
+          "confidence": 0.8,
+          "content": "4.5",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "trust_badges",
+          "found": true,
+          "confidence": 0.7,
+          "content": "https",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "availability",
+          "found": true,
+          "confidence": 0.8,
+          "content": "in-stock",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "sku",
+          "found": true,
+          "confidence": 0.6,
+          "content": "('Арт', 'икул')",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "brand",
+          "found": true,
+          "confidence": 0.8,
+          "content": "Nike",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "specifications",
+          "found": true,
+          "confidence": 0.65,
+          "content": "Материал",
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "cta",
+          "found": true,
+          "confidence": 0.5,
+          "content": "Купить",
+          "location": null,
+          "issues": []
+        }
+      ],
+      "elements_missing": [
+        {
+          "element_type": "warranty",
+          "found": false,
+          "confidence": 0.0,
+          "content": null,
+          "location": null,
+          "issues": []
+        },
+        {
+          "element_type": "social_proof",
+          "found": false,
+          "confidence": 0.0,
+          "content": null,
+          "location": null,
+          "issues": []
+        }
+      ],
+      "conversion_readiness": "good",
+      "settings": {}
+    },
+    {
+      "type": "js_rendering",
+      "title": "JavaScript рендеринг",
+      "render_score": 100,
+      "googlebot_compatibility": {
+        "level": "excellent",
+        "message": "Отличная совместимость с Googlebot",
+        "critical_issues_count": 0,
+        "high_issues_count": 0,
+        "total_issues_count": 0
+      },
+      "differences": [
+        {
+          "element_type": "title",
+          "before": "Купить кроссовки Nike Air Max в Москве - лучшие цены | SportStore",
+          "after": "Купить кроссовки Nike Air Max в Москве - лучшие цены | SportStore",
+          "changed": false,
+          "added_content": [],
+          "removed_content": []
+        },
+        {
+          "element_type": "description",
+          "before": "Широкий выбор кроссовок Nike Air Max в Москве. Оригинальная продукция, гарантия качества, быстрая доставка. Закажите онлайн!",
+          "after": "Широкий выбор кроссовок Nike Air Max в Москве. Оригинальная продукция, гарантия качества, быстрая доставка. Закажите онлайн!",
+          "changed": false,
+          "added_content": [],
+          "removed_content": []
+        },
+        {
+          "element_type": "h1",
+          "before": "Кроссовки Nike Air Max",
+          "after": "Кроссовки Nike Air Max",
+          "changed": false,
+          "added_content": [],
+          "removed_content": []
+        },
+        {
+          "element_type": "links",
+          "before": "2",
+          "after": "2",
+          "changed": false,
+          "added_content": [],
+          "removed_content": []
+        },
+        {
+          "element_type": "word_count",
+          "before": "89",
+          "after": "89",
+          "changed": false,
+          "added_content": [
+            "0 слов"
+          ],
+          "removed_content": []
+        },
+        {
+          "element_type": "schema",
+          "before": "1 схем",
+          "after": "1 схем",
+          "changed": false,
+          "added_content": [],
+          "removed_content": []
+        }
+      ],
+      "issues": [],
+      "settings": {}
+    },
+    {
+      "type": "technical_issues",
+      "title": "Технические проблемы",
+      "total_issues": 1,
+      "by_priority": {
+        "critical": [],
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "critical_count": 0,
+      "high_count": 0,
+      "settings": {}
+    },
+    {
+      "type": "recommendations",
+      "title": "Рекомендации",
+      "recommendations": [
+        {
+          "priority": "low",
+          "category": "JavaScript",
+          "action": "Текущая реализация хороша. Регулярно проверяйте изменения после обновлений.",
+          "impact": "Профилактическая мера"
+        }
+      ],
+      "settings": {}
+    },
+    {
+      "type": "footer",
+      "company_name": "SEO Master PRO",
+      "contact_info": "professional SEO audit tool",
+      "disclaimer": "Отчет сгенерирован автоматически",
+      "settings": {}
+    }
+  ],
+  "summary": {
+    "overall_score": 79,
+    "status": "good",
+    "status_text": "Хорошее состояние",
+    "color": "#3b82f6",
+    "total_issues": 1,
+    "critical_issues": 0,
+    "url": "https://example.com/product/nike-air-max",
+    "audit_date": "22.05.2026 21:30"
+  },
+  "overall_score": 79
+}

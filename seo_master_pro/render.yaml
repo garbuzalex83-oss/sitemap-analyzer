@@ -1,0 +1,30 @@
+name: SEO Master PRO
+
+description: Профессиональный SEO-аудит уровня Enterprise с веб-интерфейсом
+
+logo: https://raw.githubusercontent.com/garbuzalex83-oss/sitemap-analyzer/main/web/static/images/logo.png
+
+keywords:
+  - seo
+  - аудит
+  - crawler
+  - анализ сайта
+  - google
+  - serp
+  - мета-теги
+  - коммерческие факторы
+  - js рендеринг
+
+url: https://garbuzalex83-oss.github.io/sitemap-analyzer/
+
+env:
+  PYTHON_VERSION: "3.11"
+
+build:
+  commands:
+    - pip install -r requirements.txt
+    - playwright install --with-deps chromium
+
+run:
+  commands:
+    - uvicorn web.app:app --host 0.0.0.0 --port $PORT
